@@ -1,0 +1,38 @@
+body{
+    background-color: black;
+    font-family: sans-serif;
+}
+a{/*que imite al padre bloque anterior*/
+    color: inherit;
+    text-decoration: none;
+}
+
+ul{
+    background-color: white;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 5rem;
+}
+
+li{
+    background-color: chocolate;
+    color: white;
+    border: dashed;
+    border-color: chartreuse;
+    padding: .3rem .7rem; 
+}
+
+ul{
+    display: flex; /* inline-flex, su dimension es dinamica*/
+    /*flex-direction: row;*/ /*row-inverse Invierte la barra desde la derecha e invierte el orden, fila*/
+                        /*column o column inverse* la primera de abajo hacia arriba y la otra invierte el orden como la anteriro*/
+    /*Ambos se mueven en el eje principal*/
+    /*justify-content: flex-start; */ /*flex-ent o center o space-between o space-round o space-evelyn igual que row lo pone desde derecha a izquierda la unica diferencia es que no invierte el orden*/
+
+    /*mover en el eje cruazo*/
+    flex-wrap: wrap;
+    align-items: stretch;/*los elementos hijos van a tomar todo el espacio en el eje cruzado*/
+    gap: 0.3 rem 0.7 rem
+}
+

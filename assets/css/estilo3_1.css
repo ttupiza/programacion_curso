@@ -1,0 +1,31 @@
+body{
+    background-color: black;
+    font-family: sans-serif;
+}
+a{/*que imite al padre bloque anterior*/
+    color: inherit;
+    text-decoration: none;
+}
+
+ul{
+    background-color: white;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 5rem;
+}
+
+li{
+    background-color: chocolate;
+    color: white;
+    border: dashed;
+    border-color: chartreuse;
+    padding: .3rem .7rem; 
+}
+
+ul{
+    display: flex;
+}
+li{
+    flex-grow: 1;
+}

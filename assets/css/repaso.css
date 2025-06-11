@@ -1,0 +1,60 @@
+.servicios{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+.servicios article{
+    background-color: blue;
+    border: 1px solid gray;
+    border-radius: 25px; 
+    text-align: center;
+    color: white;
+}
+
+.servicios h3{
+    color: greenyellow;
+    font-size: 36px;
+}
+
+.contacto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.social-icons li{
+    display: inline-block;
+    padding: 10px;
+}
+ul{
+    list-style: none;
+    
+}
+.social-icons li a{
+    text-decoration: none;
+    color: blueviolet;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .servicios{
+        grid-template-columns: 1fr;
+    }
+    .servicios article{
+        margin: 10px;
+    }
+    .servicios h3{
+        font-size: 24px;
+    }
+    .servicios p{
+        font-size: 18px;
+        text-align: center;
+    }
+    .icons{
+        width: 100px;
+    }
+    .servicios article{
+        background-color: violet;
+    }
+}

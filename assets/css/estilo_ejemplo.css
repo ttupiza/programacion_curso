@@ -1,0 +1,109 @@
+/*
+h3{
+    color: blueviolet;
+}/*
+p{
+    color: brown;
+}
+
+*{
+    color: brown;
+}
+
+body{
+    background-color: black;
+    color: bisque;
+}
+*/
+
+.listas{
+    color: blueviolet;
+}
+/*ol,*/
+ul,
+h4{
+    font-size: 15px;
+}
+
+h3{
+    font-size: 20px;
+}
+
+/*li{
+    color: aquamarine;
+    font-size: 43px;
+    font-family: cursive;
+}*/
+
+.imagen{
+    width: 200px;
+    border-width: 5px;/*mas grande mas grueso*/
+    border-color: #57cc99;
+    border-style: solid;/*dotted,dashed,double,groover,inset,ouset, combinacion solid dotted*/
+
+}
+
+/*
+.bordes{
+    border-radius: 15px;/*mayor numero mayor redondeado
+}*/
+
+/*
+.bordes{
+    border-radius: 50%;/*mayor numero mayor circulo o ovalo
+}*/
+
+/*
+color de fondo en los contenedores div html
+*/
+
+div{
+    background-color: red;
+}
+
+.listas_fondo{
+    background-color: silver;
+}
+
+#titulo{
+    font-size: 25px;
+    color: yellow;
+    font-family: 'Lucida Sans';
+}
+
+#riversong{
+    border-width: 15px;
+    border-color: blue;
+    border-style: solid dotted;
+    border-radius: 50%;
+}
+
+#ordenada{
+    color: blanchedalmond;
+    font-size: 18px;
+    font-family: "Times New Roman";
+}
+
+/*
+[type=radio]{
+    margin: 15px;
+}
+*/
+
+input[type=radio]{
+    margin: 5px;
+}
+
+[type=checkbox]{
+    margin: 15px;
+}
+
+a[href="https://www.youtube.com/watch?v=UzjCn8EGUfw&t=107s"]{
+    color:green;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+body{
+    color: chocolate;
+}

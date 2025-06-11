@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{/*estilo del cuerpo y tipo de letra*/
+   margin: 0;
+   padding: 0;
+   font-family: "Poppins", sans-serif;
+}
+
+:root{/*variables de colores*/
+    --main-color:#780000;
+    --second-color:#E9A319;
+    --white:#EBF4F6;
+    --gray:gray;
+    --black:black;
+    --yellow:yellow;
+}
+
+header{/*estilo del header, cabecera mini menu*/
+    background-color: var(--main-color);
+    height: 80px;/*Altura del contenedor de la lista*/
+    border-bottom: 3px solid var(--yellow);/* Borde inferior del contenedor de la lista, linea amarilla*/
+ }
+ 
+
+nav ul{/*estilo de la lista*/
+    list-style: none;/*quita los punticos de la lista*/
+
+}
+
+nav ul li{/*estilo de los elementos de la lista*/
+    display: inline-block;/*Hace que mi lista se vea en horizontal*/
+    padding: 20px;
+}
+
+nav ul li:hover{/*es una pseudo clase para las acciones del mouse*, para resaltar mas la opcion a tomar*/
+    background-color: var(--second-color);/*color de fondo*/
+}
+
+nav ul li a{/*estilo de los enlaces*/
+    color: white;/*color de la fuente*/
+    text-decoration: none;/*quita la raya link*/
+}
+
+nav ul li a:hover{/*es una pseudo clase para las acciones del mouse*/
+    color:var(--black);/*color de la fuente*/
+    font-weight: 700;
+}
+
+.img-slider{
+    width: 100%;/*unidades relativas cuando trabajo con porcentaje*/
+    height: 600px;/*Unidades absolutas*/
+}
+
+.servicios{/*estilo de la seccion servicios*/
+    display: grid;
+    grid-template-columns: auto auto auto;/*3 columnas*/
+    gap: 30px;/*espacio entre columnas*/
+    padding: 5% 5%;/*espacio entre columnas y filas*/
+    
+}
+
+.servicios .card {/*estilo de las tarjetas*/
+    border: 2px solid var(--main-color);/*color de la tarjeta y grueso del borde*/
+    padding: 30px;/*espacio entre el borde y el contenido*/
+    border-radius: 15px;/*esquinas redondeadas*/ 
+    background-image: linear-gradient(to bottom, var(--second-color), var(--white));/*color de fondo*/ 
+}
+
+.img-servicios{/*estilo de la imagen de las tarjetas*/
+    width: 400px;/*altura*/
+    height: 400px;/*ancho*/
+    border-radius: 15px;/*esquinas redondeadas*/
+    border-radius: 50%;
+}
+
+.card h3{/*estilo del titulo de la tarjeta*/
+    color: var(--main-color);/*color del texto*/
+    font-size: 32px;/*tamaño del texto*/
+    font-weight: 700;/*negrita*/
+    text-align: center; /*alinear el texto al centro*/
+}
+
+.card p{/*estilo del parrafo de la tarjeta*/
+    color: var(--black);/*color del texto*/
+    font-family: "Poppins", sans-serif;/*tipo de letra*/
+    text-align: center;
+}
+
+.contacto{/*estilo de la seccion contacto*/
+    display: grid;
+    grid-template-columns: auto auto ;/*2 columnas*/
+    background-color: #FAD59A;  /*color de fondo*/
+    padding: 5%;    /*espacio entre columnas y filas*/
+}
+
+.contacto article{/*estilo de los articulos*/
+    padding: 50px;/*espacio entre el borde y el contenido*/
+}
+
+label{/*estilo de las etiquetas*/
+    font-size: 18px;/* tamaño de la fuente*/
+    font-weight: 600;/* negrita*/
+    color: var(--black);     /*color de la fuente*/
+}
+
+input[type="text"], [type="email"], textarea{/*estilo de los inputs, campos*/
+    width: 100%;/*ancho*/
+    padding: 5px;   /*espacio entre el borde y el contenido*/
+    border: 1px solid var(--gray);  /*color del borde y grueso*/
+    border-radius: 5px;/*esquinas redondeadas*/
+}
+
+input[type="submit"]{/*estilo del boton*/
+    background-color: var(--main-color);    /*color de fondo*/
+    width: 100%;        /*ancho*/
+    color: var(--white);     /*color de la fuente*/
+    padding-top: 10px;       /*espacio entre el borde y el contenido, superior*/
+    padding-bottom: 10px;    /*espacio entre el borde y el contenido, infeiror*/
+    font-size: 24px;/* tamaño de la fuente*/
+}
+
+footer{/*estilo del pie de pagina*/
+    display: grid;
+    grid-template-columns: auto auto auto;/*3 columnas*/
+    background-color: var(--second-color);/*color de fondo*/
+    /*color: white;*/
+    padding: 5%;/*espacio entre columnas y filas*/
+}
+
+.font-white{/*estilo de la fuente*/
+    color: var(--white);
+}
+
+footer .col-1 ul{/*estilo de la lista*/
+    list-style: none;/*quita los punticos de la lista*/
+}
+
+.logo-footer{/*estilo del logo*/
+    width: 200px;/*ancho*/
+    /*padding-top:10px;*/
+    border-radius: 50%;/*esquinas redondeadas*/
+}
+a{/*estilo de los enlaces*/
+    text-decoration: none;/*quita la raya link*/
+    /*color: var(--white);*/
+}
+
+footer .col-1 ul li a:hover{/*es una pseudo clase para las acciones del mouse, opciones del footer para que se va mas llamativo*/
+    color: var(--black);/* color de la fuente*/
+    font-weight: 700;/*negrita*/
+ }
+
+ .curso .col-1 ul li a{/*estilo de los enlaces*/
+    list-style: none;/* color de la fuente*/
+    color: var(--black);
+ }
+ .curso .col-1 ul li a:hover{/*es una pseudo clase para las acciones del mouse, opciones del footer para que se va mas llamativo*/
+    color: var(--second-color);/* color de la fuente*/
+    font-weight: 700;/*negrita*/
+    
+ }
+
+
+ h2{/*estilo del titulo*/
+    font-size: 1.6em;/* tamaño de la fuente*/
+    color:var(--main-color);/* color de la fuente*/
+ }
+ .center{/*centra el texto*/
+    text-align: center;
+ }
+
+ footer .col-1 ul li a{/*estilo de los enlaces*/
+    color: var(--white);/* color de la fuente*/
+ }
+
+ .quienes-somos{/*estilo de la seccion quienes somos*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;/*2 columnas*/
+    background-color:  #FAD59A;
+    text-align: justify;
+ }
+ .curso{/*estilo de la seccion curso*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;/*2 columnas*/
+    background-image: linear-gradient(to bottom, #FAD59A, var(--white));/*color de fondo*/
+ }
+ .img{/*estilo de la imagen*/
+    width: 600px;/*ancho*/
+    border-radius: 20px;/*esquinas redondeadas*/
+    box-shadow: var(--main-color) 0px 0px 20px;/*sombras*/
+ }
+
+ ul {/*estilo de la lista*/
+    list-style: none;/*quita los punticos de la lista*/
+ }
+
+ .padding-top-80px{/*estilo de la seccion de padding*/
+    padding-top: 80px;
+ }
+
+ .padding-bottom-80px{/*estilo de la seccion de padding*/
+    padding-bottom: 80px;
+ }
+
+ .col-1{/*estilo de la columna 1*/
+    padding: 20px;
+ }
+
+ .tabla{
+    display: grid;
+    background-image: linear-gradient(to bottom, #FAD59A, var(--white));/*color de fondo*/
+ }
+ table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+th, td {
+    border: 1px solid var(--main-color);/*color del borde y grueso*/
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: var(--second-color);/*color de fondo*/
+    font-weight: bold;
+    color: var(--white);
+}

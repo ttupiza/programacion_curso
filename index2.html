@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase2</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Inicio</a>
+                </li>
+
+                <li>
+                    <a href="#">Servicios</a>
+                </li>
+
+                <li>
+                    <a href="#">Galeria</a>
+                </li>
+
+                <li>
+                    <a href="#">Contacto</a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <img src="assets/images/slider1.jpg" class="img-slider" alt="Servicios">
+    </section>
+
+    <section class="servicios">
+        <div class="card">
+            <img src="assets/images/fotografia.jpg" class="img-servicios" alt="foto">
+            <h3>Fotografia</h3>
+
+            <p>
+                Haz memorable tus momentos para toda la vida
+            </p>
+        </div>
+
+        <div class="card">
+            <img src="assets/images/desarrollo_web.jpg" class="img-servicios" alt="foto">
+            <h3>Desarrollo web</h3>
+
+            <p>
+                Creamos para tu marca la web que necesitas para vender
+            </p>
+        </div>
+
+        <div class="card">
+            <img src="assets/images/app.jpg" class="img-servicios" alt="foto">
+            <h3>Desarrollo de App</h3>
+
+            <p>
+                Creamos Apps a medida de yus necesidades
+            </p>
+        </div>
+    </section>
+
+    <section class="contacto">
+            <article>
+                <h2>Contactanos</h2>
+
+                <p>
+                    Dejanos un mensaje y en breve te contactamos
+                </p>
+            </article>
+
+            <article>
+                <form name="contact" accion="#" method="get">
+                    <label id="nombre">Nombre: </label>
+                    <input type="text" name="nombre">
+                    <br>
+
+                    <label id="apellido">Apellido: </label>
+                    <input type="text" name="apellido">
+                    <br>
+
+                    <label id="email">Correo: </label>
+                    <input type="email" name="email">
+                    <br>
+
+                    <label id="mensaje">Mensaje: </label>
+                    <textarea name="mensaje" id="mensaje" rows="5">
+                    </textarea>
+
+                    <input type="submit" value="ENVIAR">
+                    
+                </form>
+
+            </article>
+    </section>
+
+</body>
+</html>
